@@ -53,7 +53,7 @@ export default function Home() {
             <div className="flex items-center">
               <div className="flex-shrink-0 transform hover:scale-105 transition-transform duration-300">
                 <img 
-                  src="/nexorionlogo.png" 
+                  src="nexorion/public/nexorionlogo.png" 
                   alt="Nexorion" 
                   className="h-10 w-auto drop-shadow-lg"
                 />
@@ -494,8 +494,8 @@ export default function Home() {
                   <MessageCircle className="text-white" size={28} />
                 </div>
                 <h4 className="font-bold text-gray-900 mb-4 text-lg">Email Us</h4>
-                <p className="text-gray-600 font-medium">hello@nexorion.com</p>
-                <p className="text-gray-600 font-medium">support@nexorion.com</p>
+                <p className="text-gray-600 font-medium">accounts@nexorion.co.in</p>
+                <p className="text-gray-600 font-medium">hr@nexorion.co.in</p>
               </div>
               <div className="text-center group">
                 <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:rotate-12 transition-transform duration-500 shadow-xl">
@@ -572,7 +572,7 @@ export default function Home() {
                 </button>
               </div>
               
-              <form action="https://formsubmit.co/hello@nexorion.com" method="POST" className="space-y-6">
+              <form action="https://formsubmit.co/accounts@nexorion.co.in" method="POST" className="space-y-6">
                 <input type="hidden" name="_subject" value={`New ${formType} Application`} />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
