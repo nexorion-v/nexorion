@@ -53,7 +53,7 @@ export default function Home() {
             <div className="flex items-center">
               <div className="flex-shrink-0 transform hover:scale-105 transition-transform duration-300">
                 <img 
-                  src="/nexorionlogo.png" 
+                  src="/nexorion/public/nexorionlogo.png" 
                   alt="Nexorion" 
                   className="h-10 w-auto drop-shadow-lg"
                 />
