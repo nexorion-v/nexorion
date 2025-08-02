@@ -572,7 +572,7 @@ export default function Home() {
                 </button>
               </div>
               
-              <form action="https://formsubmit.co/accounts@nexorion.co.in" method="POST" className="space-y-6">
+              <form action="https://formsubmit.co/nexorionventures@gmail.com" method="POST" className="space-y-6">
                 <input type="hidden" name="_subject" value={`New ${formType} Application`} />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
