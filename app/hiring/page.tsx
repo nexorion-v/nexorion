@@ -70,22 +70,35 @@ export default function Hiring() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-amber-50 text-gray-900 overflow-x-hidden relative">
       {/* Animated Background Elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse animation-delay-4000"></div>
+        <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+              <circle cx="50" cy="50" r="2" fill="#fbbf24" opacity="0.3">
+                <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="10" cy="10" r="1.5" fill="#f59e0b" opacity="0.4">
+                <animate attributeName="opacity" values="0.4;0.7;0.4" dur="2s" repeatCount="indefinite" />
+              </circle>
+              <circle cx="90" cy="20" r="1" fill="#d97706" opacity="0.5">
+                <animate attributeName="opacity" values="0.5;0.9;0.5" dur="2.5s" repeatCount="indefinite" />
+              </circle>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#dots)" />
+        </svg>
       </div>
 
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-xl border-b border-white/10">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-yellow-200/50 shadow-lg shadow-yellow-100/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-4">
               <a 
                 href="/"
-                className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-300"
+                className="flex items-center space-x-2 text-gray-600 hover:text-gray-800 transition-colors duration-300"
               >
                 <ArrowLeft className="w-5 h-5" />
                 <span>Back to Website</span>
@@ -108,18 +121,18 @@ export default function Hiring() {
       <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8">
-            <span className="inline-block px-6 py-3 bg-gradient-to-r from-green-500/20 to-emerald-500/20 backdrop-blur-sm rounded-full text-sm font-medium border border-white/10 mb-8">
+            <span className="inline-block px-6 py-3 bg-gradient-to-r from-green-400/20 to-emerald-400/20 backdrop-blur-sm rounded-full text-sm font-medium border border-green-300/30 mb-8 text-gray-700">
               🚀 Join Our Mission
             </span>
           </div>
           
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">We're Hiring</span>
+            <span className="bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">We're Hiring</span>
           </h1>
           
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-white">Join the Pack!</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-gray-800">Join the Pack!</h2>
           
-          <p className="text-xl sm:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
             We're assembling a global team of wonderful, diverse people to create mobile marketing experiences with real impact.
           </p>
         </div>
@@ -129,8 +142,8 @@ export default function Hiring() {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 text-white">Current Openings</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold mb-6 text-gray-800">Current Openings</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               To learn more, here are some roles we're hiring for right now!
             </p>
           </div>
@@ -139,15 +152,15 @@ export default function Hiring() {
             {roles.map((role, index) => (
               <div
                 key={index}
-                className="group bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10 hover:border-white/20 transition-all duration-300 hover:transform hover:scale-105"
+                className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-yellow-200/50 hover:border-yellow-300/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-yellow-200/30"
               >
                 <div className={`w-12 h-12 bg-gradient-to-r ${role.gradient} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   {role.icon}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">{role.title}</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">{role.title}</h3>
                 <button
                   onClick={() => setIsFormOpen(true)}
-                  className="text-green-400 hover:text-green-300 font-medium transition-colors duration-300"
+                  className="text-green-600 hover:text-green-700 font-medium transition-colors duration-300"
                 >
                   Apply Now →
                 </button>
@@ -155,10 +168,10 @@ export default function Hiring() {
             ))}
           </div>
 
-          <div className="text-center bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-            <p className="text-lg text-gray-300 mb-6">
+          <div className="text-center bg-gradient-to-br from-yellow-100/80 to-orange-100/80 backdrop-blur-sm p-8 rounded-3xl border border-yellow-200/50 shadow-lg">
+            <p className="text-lg text-gray-600 mb-6">
               Not an engineer but still keen to learn more? Shoot us a message at{' '}
-              <a href="mailto:career@nexorion.com" className="text-blue-400 hover:text-blue-300 transition-colors duration-300">
+              <a href="mailto:career@nexorion.com" className="text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
                 career@nexorion.com
               </a>
               . We'll be hiring for people in design, product, marketing, and ops over the next 12 months, and would love to hear from you.
@@ -171,62 +184,62 @@ export default function Hiring() {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">
               How is life at Nexorion?
             </h2>
           </div>
 
           <div className="space-y-12">
-            <div className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-              <p className="text-lg text-gray-300 leading-relaxed mb-6">
+            <div className="bg-gradient-to-br from-white/80 to-yellow-50/80 backdrop-blur-sm p-8 rounded-3xl border border-yellow-200/50 shadow-lg">
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 Working at Nexorion would instantly make you realize one thing: you are working with the best talent around you. Not just in the role you occupy, or the team you work with but everyone you meet here. With the right company, even conversations can be rejuvenating; at Nexorion, we guarantee a good company.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-                <h3 className="text-2xl font-bold mb-4 text-green-400">Hard truths:</h3>
-                <h4 className="text-xl font-semibold mb-4 text-white">Only when you grow we grow!</h4>
-                <p className="text-gray-300 leading-relaxed mb-4">
+              <div className="bg-gradient-to-br from-green-100/80 to-emerald-100/80 backdrop-blur-sm p-8 rounded-3xl border border-green-200/50 shadow-lg">
+                <h3 className="text-2xl font-bold mb-4 text-green-700">Hard truths:</h3>
+                <h4 className="text-xl font-semibold mb-4 text-gray-800">Only when you grow we grow!</h4>
+                <p className="text-gray-600 leading-relaxed mb-4">
                   Pushing oneself comes with the role. Because we believe that's how you learn & grow.
                 </p>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   And we realise pushing oneself is hard work. Which is why we are always in the continuous process of building an environment that helps the team rejuvenate oneself: included but not limited to a stacked, in-house pantry, which provides all the super power you need to be the best ;)
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-                <h3 className="text-2xl font-bold mb-4 text-blue-400">Your work should speak for you.</h3>
-                <p className="text-gray-300 leading-relaxed">
+              <div className="bg-gradient-to-br from-yellow-100/80 to-orange-100/80 backdrop-blur-sm p-8 rounded-3xl border border-yellow-200/50 shadow-lg">
+                <h3 className="text-2xl font-bold mb-4 text-yellow-700">Your work should speak for you.</h3>
+                <p className="text-gray-600 leading-relaxed">
                   To make things smoother and to make sure you spend time and energy only on the most important things, Nexorion strives to make every process transparent: there are no work timings because we do not believe in archaic methods of calculating productivity.
                 </p>
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-                <h3 className="text-2xl font-bold mb-4 text-purple-400">Rewards & Recognitions</h3>
-                <p className="text-gray-300 leading-relaxed">
+              <div className="bg-gradient-to-br from-orange-100/80 to-amber-100/80 backdrop-blur-sm p-8 rounded-3xl border border-orange-200/50 shadow-lg">
+                <h3 className="text-2xl font-bold mb-4 text-orange-700">Rewards & Recognitions</h3>
+                <p className="text-gray-600 leading-relaxed">
                   Trust us, we have numerous ways to express our gratitude for your contribution, ranging from appraisals to performance rewards and beyond. Your dedication and hard work are truly treasured and We value YOU!!!
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-orange-500/10 to-red-500/10 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-                <h3 className="text-2xl font-bold mb-4 text-orange-400">Bcuz Multitasking Ninja is not a job title</h3>
-                <p className="text-gray-300 leading-relaxed">
+              <div className="bg-gradient-to-br from-amber-100/80 to-yellow-100/80 backdrop-blur-sm p-8 rounded-3xl border border-amber-200/50 shadow-lg">
+                <h3 className="text-2xl font-bold mb-4 text-amber-700">Bcuz Multitasking Ninja is not a job title</h3>
+                <p className="text-gray-600 leading-relaxed">
                   There are no specific job designations because you will be expected to hold down roles that cannot be described in one word. We are in constant efforts to provide you with work which is not only fun but challenging. There's a lot to learn...so why limit yourself at one when you can be better at two! In our eyes you are a superhero!
                 </p>
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-              <h3 className="text-2xl font-bold mb-4 text-cyan-400">Our actions are louder than words.</h3>
-              <p className="text-gray-300 leading-relaxed mb-6">
+            <div className="bg-gradient-to-br from-yellow-100/80 to-orange-100/80 backdrop-blur-sm p-8 rounded-3xl border border-yellow-200/50 shadow-lg">
+              <h3 className="text-2xl font-bold mb-4 text-yellow-700">Our actions are louder than words.</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
                 Since trust is a major virtue in the community we have built, all our employees get their salaries on time. A show of trust that speaks volumes because of the skin in the game.
               </p>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 There are many more such eccentricities that make Nexorion what it is but that's for one to discover. If you feel at home reading this, get in touch:{' '}
-                <a href="mailto:career@nexorion.com" className="text-cyan-400 hover:text-cyan-300 transition-colors duration-300">
+                <a href="mailto:career@nexorion.com" className="text-yellow-600 hover:text-yellow-700 transition-colors duration-300">
                   career@nexorion.com
                 </a>
               </p>
@@ -239,23 +252,23 @@ export default function Hiring() {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
               Benefits
             </h2>
-            <p className="text-xl text-gray-300">Perks of Joining Us</p>
+            <p className="text-xl text-gray-600">Perks of Joining Us</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="group bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10 hover:border-green-500/30 transition-all duration-300 hover:transform hover:scale-105"
+                className="group bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-yellow-200/50 hover:border-green-300/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-green-200/30"
               >
-                <div className="text-green-400 mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-green-600 mb-4 group-hover:scale-110 transition-transform duration-300">
                   {benefit.icon}
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">{benefit.title}</h3>
-                <p className="text-gray-300 text-sm">{benefit.description}</p>
+                <h3 className="text-lg font-bold text-gray-800 mb-2">{benefit.title}</h3>
+                <p className="text-gray-600 text-sm">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -265,9 +278,9 @@ export default function Hiring() {
       {/* CTA Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/10 backdrop-blur-sm p-12 rounded-3xl border border-white/10">
-            <h2 className="text-4xl font-bold mb-6 text-white">Ready to Join Our Team?</h2>
-            <p className="text-xl text-gray-300 mb-8">
+          <div className="bg-gradient-to-br from-green-100/80 to-emerald-100/80 backdrop-blur-sm p-12 rounded-3xl border border-green-200/50 shadow-lg">
+            <h2 className="text-4xl font-bold mb-6 text-gray-800">Ready to Join Our Team?</h2>
+            <p className="text-xl text-gray-600 mb-8">
               Take the first step towards an exciting career with Nexorion
             </p>
             <button
@@ -282,7 +295,7 @@ export default function Hiring() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black/20 backdrop-blur-sm border-t border-white/10 py-8 px-4 sm:px-6 lg:px-8">
+      <footer className="bg-white/80 backdrop-blur-sm border-t border-yellow-200/50 py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex justify-center items-center space-x-4 mb-4">
             <Image
@@ -293,7 +306,7 @@ export default function Hiring() {
               className="h-8 w-auto"
             />
           </div>
-          <p className="text-gray-400">
+          <p className="text-gray-500">
             © 2024 Nexorion. All rights reserved. Made with ❤️ for your success.
           </p>
         </div>
@@ -302,12 +315,12 @@ export default function Hiring() {
       {/* Application Form Modal */}
       {isFormOpen && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50">
-          <div className="bg-gradient-to-br from-gray-900 to-black border border-white/20 rounded-3xl p-8 w-full max-w-md transform transition-all duration-300 scale-100">
+          <div className="bg-white border border-yellow-200/50 rounded-3xl p-8 w-full max-w-md transform transition-all duration-300 scale-100 shadow-2xl">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-2xl font-bold text-white">Apply for Position</h3>
+              <h3 className="text-2xl font-bold text-gray-800">Apply for Position</h3>
               <button
                 onClick={() => setIsFormOpen(false)}
-                className="text-gray-400 hover:text-white transition-colors duration-300"
+                className="text-gray-400 hover:text-gray-600 transition-colors duration-300"
               >
                 <X className="w-6 h-6" />
               </button>
@@ -324,7 +337,7 @@ export default function Hiring() {
                   name="name"
                   placeholder="Your Full Name"
                   required
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-yellow-50/50 border border-yellow-200/50 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors duration-300"
                 />
               </div>
               
@@ -334,7 +347,7 @@ export default function Hiring() {
                   name="email"
                   placeholder="Your Email"
                   required
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-yellow-50/50 border border-yellow-200/50 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors duration-300"
                 />
               </div>
               
@@ -343,7 +356,7 @@ export default function Hiring() {
                   type="tel"
                   name="phone"
                   placeholder="Your Phone Number"
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-yellow-50/50 border border-yellow-200/50 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors duration-300"
                 />
               </div>
 
@@ -351,15 +364,15 @@ export default function Hiring() {
                 <select
                   name="position"
                   required
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white focus:outline-none focus:border-green-500 transition-colors duration-300"
+                  className="w-full px-4 py-3 bg-yellow-50/50 border border-yellow-200/50 rounded-xl text-gray-800 focus:outline-none focus:border-green-500 transition-colors duration-300"
                 >
-                  <option value="" className="bg-gray-800">Select Position</option>
-                  <option value="Affiliate Marketing" className="bg-gray-800">Affiliate Marketing</option>
-                  <option value="Finance Executive" className="bg-gray-800">Finance Executive</option>
-                  <option value="HR & Admin" className="bg-gray-800">HR & Admin</option>
-                  <option value="Software Engineer" className="bg-gray-800">Software Engineer</option>
-                  <option value="QA Engineer" className="bg-gray-800">QA Engineer (App Tester)</option>
-                  <option value="Other" className="bg-gray-800">Other</option>
+                  <option value="" className="bg-white">Select Position</option>
+                  <option value="Affiliate Marketing" className="bg-white">Affiliate Marketing</option>
+                  <option value="Finance Executive" className="bg-white">Finance Executive</option>
+                  <option value="HR & Admin" className="bg-white">HR & Admin</option>
+                  <option value="Software Engineer" className="bg-white">Software Engineer</option>
+                  <option value="QA Engineer" className="bg-white">QA Engineer (App Tester)</option>
+                  <option value="Other" className="bg-white">Other</option>
                 </select>
               </div>
               
@@ -368,13 +381,13 @@ export default function Hiring() {
                   name="message"
                   placeholder="Tell us about your experience and why you want to join Nexorion..."
                   rows={4}
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-green-500 transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-3 bg-yellow-50/50 border border-yellow-200/50 rounded-xl text-gray-800 placeholder-gray-500 focus:outline-none focus:border-green-500 transition-colors duration-300 resize-none"
                 ></textarea>
               </div>
               
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white py-3 rounded-xl font-semibold hover:from-green-700 hover:to-emerald-700 transform hover:scale-105 transition-all duration-300"
+                className="w-full bg-gradient-to-r from-green-600 to-emerald-600 text-white py-3 rounded-xl font-semibold hover:from-green-700 hover:to-emerald-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-green-300/30"
               >
                 Submit Application
               </button>
