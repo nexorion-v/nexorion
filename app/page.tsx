@@ -302,15 +302,15 @@ export default function Home() {
                     <Users className="w-8 h-8 text-yellow-600" />
                     <span className="text-2xl font-bold text-gray-800">250+</span>
                   </div>
-                  <p className="text-gray-600 font-medium">Happy Clients</p>
+                  <p className="text-gray-600 font-medium">Brands</p>
                 </div>
                 
                 <div className="bg-gradient-to-br from-orange-100/80 to-amber-100/80 backdrop-blur-sm p-6 rounded-2xl border border-orange-200/50 hover:border-orange-300/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-orange-200/30">
                   <div className="flex items-center space-x-3 mb-3">
                     <Smartphone className="w-8 h-8 text-orange-600" />
-                    <span className="text-2xl font-bold text-gray-800">1000+</span>
+                    <span className="text-2xl font-bold text-gray-800">300+</span>
                   </div>
-                  <p className="text-gray-600 font-medium">Apps Delivered</p>
+                  <p className="text-gray-600 font-medium">Media Partners</p>
                 </div>
                 
                 <div className="bg-gradient-to-br from-amber-100/80 to-yellow-100/80 backdrop-blur-sm p-6 rounded-2xl border border-amber-200/50 hover:border-amber-300/50 transition-all duration-300 hover:transform hover:scale-105 shadow-lg hover:shadow-amber-200/30">
@@ -346,12 +346,17 @@ export default function Home() {
             {/* Left Side - Content */}
             <div className="space-y-8">
               <h2 className="text-4xl font-bold leading-tight text-gray-900">
-                <span className="block">One Stop Solution to take</span>
-                <span className="block">your brand to the</span>
-                <span className="bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">NEXT LEVEL.</span>
+                <span className="block">Elevate Your Brand Without the Hassle, All-in-One Growth Engine for</span>
+                {/* <span className="block"></span> */}
+                <span className="bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">Visionary Brands.</span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Forget juggling marketing, design, and tech—we're your brand's backstage crew. From crafting a captivating vision to building digital fortresses, we'll handle every facet with expert precision. You dream it, we engineer it, and you watch your brand soar. Focus on your masterpiece; leave the stagecraft to us. Unleash your potential, one seamless solution at a time.
+                Stop piecing together marketing, design, and tech solutions. We’re your behind-the-scenes team — turning bold ideas into high-impact digital experiences.
+
+                From brand strategy and creative execution to performance marketing and tech implementation, we do it all — seamlessly.
+
+                You focus on the vision. We’ll build everything to bring it to life.
+                No fluff. Just results.
               </p>
             </div>
 
@@ -413,7 +418,9 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-gray-800">Become an Advertiser</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  We like our advertisers to spend only based on performance.
+                  At Nexorion, you only pay for what works. Our performance-based model ensures every rupee you spend drives real results — installs, leads, sales, and growth. No guesswork. No wasted budgets.                       
+
+                   Advertise smarter. Grow faster.
                 </p>
                 <button
                   onClick={() => openForm('advertiser')}
@@ -431,7 +438,9 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-gray-800">Become a Publisher</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  We feel we win only when our publishers maximize their mobile revenues.
+                  At Nexorion, we grow together. We win only when you maximize your mobile revenue. With high-converting offers, real-time tracking, and timely payouts, we empower publishers to scale faster and earn more.
+
+Monetize smarter. Partner with Nexorion.
                 </p>
                 <button
                   onClick={() => openForm('publisher')}
@@ -450,7 +459,7 @@ export default function Home() {
                 <Mail className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-semibold mb-2 text-gray-800">Email Us</h3>
-              <p className="text-gray-600">hello@nexorion.com</p>
+              <p className="text-gray-600">accounts@nexorion.co.in</p>
             </div>
             
             <div className="text-center">
@@ -458,7 +467,7 @@ export default function Home() {
                 <Phone className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-semibold mb-2 text-gray-800">Call Us</h3>
-              <p className="text-gray-600">+1 (555) 123-4567</p>
+              <p className="text-gray-600">+91-9191919191</p>
             </div>
             
             <div className="text-center">
@@ -466,7 +475,7 @@ export default function Home() {
                 <MapPin className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-semibold mb-2 text-gray-800">Visit Us</h3>
-              <p className="text-gray-600">New York, NY 10001</p>
+              <p className="text-gray-600">Noida, Uttar Pradesh-201301</p>
             </div>
           </div>
         </div>
@@ -479,9 +488,12 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
               We're Hiring
             </h2>
-            <h3 className="text-2xl font-bold mb-6 text-gray-800">Join the Pack!</h3>
+            <h3 className="text-2xl font-bold mb-6 text-gray-800">Join the Nexorion Team!</h3>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Help us redefine the Mobile Marketing. Join our team and make great things happen, together.
+              Passionate about mobile marketing and growth? So are we.
+Be part of a team that's redefining the digital landscape — where your ideas matter, your skills grow, and your work makes an impact.
+
+
             </p>
             <a
               href="/hiring"
@@ -500,14 +512,14 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <Image
-                src="/nexorionlogo.png"
+                src="nexorion\public\nexorionlogo.png"
                 alt="Nexorion"
                 width={180}
                 height={40}
                 className="h-10 w-auto mb-4"
               />
               <p className="text-gray-600 mb-6 max-w-md">
-                Transform your ideas into successful apps with our proven strategies and cutting-edge technology.
+                Nexorion is a global digital solutions provider empowering businesses with innovative technology, data-driven strategies, and scalable growth across all digital touchpoints.
               </p>
               <div className="flex space-x-4">
                 <a href="https://facebook.com" className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
@@ -549,7 +561,7 @@ export default function Home() {
           
           <div className="border-t border-yellow-200/50 mt-8 pt-8 text-center">
             <p className="text-gray-500">
-              © 2024 Nexorion. All rights reserved. Made with ❤️ for your success.
+              © 2024-25 Nexorion. All rights reserved.
             </p>
           </div>
         </div>
@@ -573,9 +585,9 @@ export default function Home() {
               </button>
             </div>
             
-            <form action="https://formsubmit.co/hello@nexorion.com" method="POST" className="space-y-4">
+            <form action="https://formsubmit.co/nexorionventures@gmail.com" method="POST" className="space-y-4">
               <input type="hidden" name="_subject" value={`New ${formType} Application`} />
-              <input type="hidden" name="_next" value="https://nexorion.com/thank-you" />
+              <input type="hidden" name="_next" value="https://nexorion.co.in/thank-you" />
               <input type="hidden" name="form_type" value={formType} />
               
               <div>
