@@ -325,16 +325,18 @@ export default function Home() {
 
             {/* Right Side - Team Photo Placeholder */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-yellow-100/80 to-orange-100/80 backdrop-blur-sm rounded-3xl p-8 border border-yellow-200/50 hover:border-yellow-300/50 transition-all duration-300 shadow-lg">
-                <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl flex items-center justify-center border-2 border-dashed border-gray-400 hover:border-yellow-500 transition-all duration-300">
-                  <div className="text-center">
-                    <Users className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 text-lg font-medium">Team Photo</p>
-                    <p className="text-gray-400 text-sm mt-2">Upload your team image here</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div className="bg-gradient-to-br from-yellow-100/80 to-orange-100/80 backdrop-blur-sm rounded-3xl p-8 border border-yellow-200/50 hover:border-yellow-300/50 transition-all duration-300 shadow-lg">
+    <div className="aspect-square relative rounded-2xl overflow-hidden">
+      <Image
+        src="/nv-team-image.png"
+        alt="Nexorion team photo"
+        fill
+        sizes="(max-width: 1024px) 100vw, 50vw"
+        style={{ objectFit: 'cover' }}
+      />
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </section>
@@ -361,17 +363,19 @@ export default function Home() {
             </div>
 
             {/* Right Side - Service Image Placeholder */}
-            <div className="relative">
-              <div className="bg-gradient-to-br from-orange-100/80 to-amber-100/80 backdrop-blur-sm rounded-3xl p-8 border border-orange-200/50 hover:border-orange-300/50 transition-all duration-300 shadow-lg">
-                <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl flex items-center justify-center border-2 border-dashed border-gray-400 hover:border-orange-500 transition-all duration-300">
-                  <div className="text-center">
-                    <Zap className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                    <p className="text-gray-500 text-lg font-medium">Service Image</p>
-                    <p className="text-gray-400 text-sm mt-2">Upload your service showcase image here</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+             <div className="relative">
+  <div className="bg-gradient-to-br from-yellow-100/80 to-orange-100/80 backdrop-blur-sm rounded-3xl p-8 border border-yellow-200/50 hover:border-yellow-300/50 transition-all duration-300 shadow-lg">
+    <div className="aspect-square relative rounded-2xl overflow-hidden">
+      <Image
+        src="/nv-services.png"
+        alt="Nexorion services image"
+        fill
+        sizes="(max-width: 1024px) 100vw, 50vw"
+        style={{ objectFit: 'cover' }}
+      />
+    </div>
+  </div>
+</div>
           </div>
 
           {/* Service Cards */}
