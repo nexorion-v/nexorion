@@ -252,7 +252,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-8 animate-fade-in-up">
             <span className="inline-block px-6 py-3 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 backdrop-blur-sm rounded-full text-sm font-medium border border-yellow-300/30 mb-8 text-gray-700">
-              🚀 Transform Your Digital Presence
+              Level Up Your Digital Presence
             </span>
           </div>
           
