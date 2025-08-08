@@ -529,16 +529,16 @@ Be part of a team that's redefining the digital landscape — where your ideas m
                 <a href="https://facebook.com" className="w-10 h-10 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
                   <Facebook className="w-5 h-5 text-white" />
                 </a>
-                <a href="https://twitter.com" className="w-10 h-10 bg-gradient-to-r from-sky-400 to-sky-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <a href="https://x.com/nexorion_v" className="w-10 h-10 bg-gradient-to-r from-sky-400 to-sky-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
                   <Twitter className="w-5 h-5 text-white" />
                 </a>
-                <a href="https://linkedin.com" className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <a href="https://www.linkedin.com/company/nexorion-v" className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
                   <Linkedin className="w-5 h-5 text-white" />
                 </a>
-                <a href="https://instagram.com" className="w-10 h-10 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <a href="https://www.instagram.com/nexorion_v" className="w-10 h-10 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
                   <Instagram className="w-5 h-5 text-white" />
                 </a>
-                <a href="https://youtube.com" className="w-10 h-10 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <a href="https://www.youtube.com/@nexorion_v" className="w-10 h-10 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
                   <Youtube className="w-5 h-5 text-white" />
                 </a>
               </div>
