@@ -190,7 +190,7 @@ export default function Home() {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
               <Image
-                src="/nexorionlogo.png"
+                src="/nexorionlogo.jpg"
                 alt="Nexorion"
                 width={180}
                 height={40}
@@ -257,15 +257,15 @@ export default function Home() {
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-8 leading-tight text-gray-900">
-            <span className="block mb-3 text-3xl sm:text-4xl lg:text-6xl">Level Up Your Game with</span>
-            <span className="block mb-3 text-3xl sm:text-4xl lg:text-6xl">Proven Strategies for</span>
+            <span className="block mb-3 text-3xl sm:text-4xl lg:text-6xl">Grow Faster with Strategies</span>
+            <span className="block mb-3 text-3xl sm:text-4xl lg:text-6xl">That Actually Work for</span>
             <span className="bg-gradient-to-r from-yellow-600 via-orange-600 to-amber-600 bg-clip-text text-transparent animate-gradient-x min-h-[1.2em] block">
               {rotatingWords[currentWordIndex]}
             </span>
           </h1>
           
           <p className="text-lg sm:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
-            We specialize in creating innovative mobile and web applications that drive business growth and maximize your digital potential.
+            Empowering your growth through smart Innovation, bold Creativity, and advanced Technology.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -512,7 +512,7 @@ Be part of a team that's redefining the digital landscape — where your ideas m
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <Image
-                src="nexorion\public\nexorionlogo.png"
+                src="/nexorionlogo.jpg"
                 alt="Nexorion"
                 width={180}
                 height={40}
