@@ -190,7 +190,7 @@ export default function Home() {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
               <Image
-                src="/nexorionlogo.jpg"
+                src="/nexorionlogo.png"
                 alt="Nexorion"
                 width={180}
                 height={40}
@@ -512,7 +512,7 @@ Be part of a team that's redefining the digital landscape — where your ideas m
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <Image
-                src="/nexorionlogo.jpg"
+                src="/nexorionlogo.png"
                 alt="Nexorion"
                 width={180}
                 height={40}
