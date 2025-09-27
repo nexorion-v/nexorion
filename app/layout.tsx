@@ -8,6 +8,28 @@ export const metadata: Metadata = {
   title: 'Nexorion - Level Up Your Digital Presence',
   description:
     'Join Nexorion — a performance-focused affiliate marketing network offering real-time analytics, smart targeting, and high payouts.',
+  icons: {
+    icon: '/favicon.ico', // For browser tab
+    shortcut: '/favicon.ico',
+    apple: '/logo.png',   // For Apple devices (optional)
+  },
+  openGraph: {
+    title: 'Nexorion - Level Up Your Digital Presence',
+    description:
+      'Join Nexorion — a performance-focused affiliate marketing network offering real-time analytics, smart targeting, and high payouts.',
+    url: 'https://nexorion.co.in',  // 🔴 Replace with your real URL
+    siteName: 'Nexorion',
+    images: [
+      {
+        url: '/logo.png', // should be a square or landscape image
+        width: 800,
+        height: 600,
+        alt: 'Nexorion Logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({
