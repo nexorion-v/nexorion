@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Nexorion - Transform Your Ideas Into Successful Apps',
-  description: 'Professional app development services. We specialize in creating innovative mobile and web applications that drive business growth.',
+  title: 'Nexorion - Level Up Your Digital Presence',
+  description: 'Join Nexorion — a performance-focused affiliate marketing network offering real-time analytics, smart targeting, and high payouts.',
 };
 
 export default function RootLayout({
