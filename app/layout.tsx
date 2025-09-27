@@ -9,15 +9,15 @@ export const metadata: Metadata = {
   description:
     'Join Nexorion — a performance-focused affiliate marketing network offering real-time analytics, smart targeting, and high payouts.',
   icons: {
-    icon: '/favicon.ico', // For browser tab
-    shortcut: '/favicon.ico',
-    apple: '/logo.png',   // For Apple devices (optional)
+    icon: '/nexorionlogo.png', // For browser tab
+    shortcut: '/nexorionlogo.png',
+    apple: '/nexorionlogo.png',   // For Apple devices (optional)
   },
   openGraph: {
     title: 'Nexorion - Level Up Your Digital Presence',
     description:
       'Join Nexorion — a performance-focused affiliate marketing network offering real-time analytics, smart targeting, and high payouts.',
-    url: 'https://nexorion.co.in',  // 🔴 Replace with your real URL
+    url: 'https://nexorion.co.in',  //
     siteName: 'Nexorion',
     images: [
       {
