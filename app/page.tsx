@@ -474,14 +474,14 @@ Monetize smarter. Partner with Nexorion.
               <p className="text-gray-600">+91-9191919191</p>
             </div> */}
             
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-semibold mb-2 text-gray-800">Visit Us</h3>
               <p className="text-gray-600">Noida, Uttar Pradesh-201301</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
